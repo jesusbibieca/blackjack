@@ -73,6 +73,13 @@ class Player(object):
 		else:
 			print 'Cannot get new cards'
 
+class Dealer(Player):
+	def __init__(self):
+		self.points = 0
+		self.cards = [Card() for x in xrange(2)]
+		self.name = 'Dealer'
+		self.points = set_points(self.cards)
+
 
 ###Testing Card 
 # cardA = Card()
@@ -80,10 +87,17 @@ class Player(object):
 # print cardA
 
 ###Testig Player
-player = Player('Jesus')
-print player.get_cards()
-print player.get_points()
+# player = Player('Jesus')
+# print player.get_cards()
+# print player.get_points()
+# print "Getting new card..."
+# player.get_new_card()
+# print player
+# print player.get_points()
+
+###Testing Dealer
+dealer = Dealer()
+print dealer
 print "Getting new card..."
-player.get_new_card()
-print player
-print player.get_points()
+dealer.get_new_card()
+print dealer
