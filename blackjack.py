@@ -38,6 +38,11 @@ class Card(object):
 	def __str__(self):
 		return get_card(self)
 
+class Player(object):
+	def __init__(self):
+		self.points = None
+		self.cards = [card for x in xrange(2)]
+
 
 #Testing Card 
 cardA = Card('black')
