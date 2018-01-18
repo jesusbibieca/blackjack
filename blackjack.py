@@ -6,8 +6,8 @@
 import random as R
 
 class Card(object):
-	def __init__(self): #pending add the color
-		self.color = ''
+	def __init__(self):
+		self.color = R.choice(['red', 'black'])
 		self.number =  R.choice(['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'])
 		
 		def set_value(number):
