@@ -87,8 +87,8 @@ class Dealer(Player):
 # print cardA
 
 ###Testig Player
-# player = Player('Jesus')
-# print player.get_cards()
+player = Player('Jesus')
+player.get_cards()
 # print player.get_points()
 # print "Getting new card..."
 # player.get_new_card()
@@ -96,8 +96,8 @@ class Dealer(Player):
 # print player.get_points()
 
 ###Testing Dealer
-dealer = Dealer()
-print dealer
-print "Getting new card..."
-dealer.get_new_card()
-print dealer
+# dealer = Dealer()
+# print dealer
+# print "Getting new card..."
+# dealer.get_new_card()
+# print dealer
